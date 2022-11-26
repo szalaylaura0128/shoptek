@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-BoldItalic.woff2") format("woff2"), url("../fonts/Roboto-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-MediumItalic.woff2") format("woff2"),
+        url("../fonts/Roboto-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-ThinItalic.woff2") format("woff2"), url("../fonts/Roboto-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(255, 255, 255, .65);
+    backdrop-filter: blur(6px);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 120px;
+}
+
+section.main {
+    position: relative;
+    background: #fff;
+    max-height: calc(100vh - 60px);
+    flex: 1 1 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+}
+
+.swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.swiper .swiper-slide .product {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 25%;
+    height: auto;
+    background: rgb(240, 240, 240);
+    text-align: left;
+}
+
+.swiper .swiper-slide .product .product-inner {
+    padding: 20px;
+    position: relative;
+}
+
+.swiper .swiper-slide .product-inner .product-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #000;
+}
+
+.swiper .swiper-slide .product-inner .product-price {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 5px;
+    color: #000;
+}
+
+.swiper .swiper-slide .product-inner a {
+    width: auto;
+    padding: 10px;
+    background: #8ce3fd;
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: center;
+    margin: 15px 0 0;
+}
+
+footer {
+    height: 60px;
+    background: #fff;
+    display: flex;
+}
+
+footer a {
+    color: #000;
+    font-size: 26px;
+    text-decoration: none;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a span {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 2px 0 0;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer a.active {
+    background: #8ce3fd;
+}
+
+body#profile section.main,
+body#search section.main {
+    padding: 75px 15px 0;
+}
+
+body#search section.main h1 {
+    margin: 0 0 5px;
+}
+
+body#search section.main input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 13px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+body#search section.main .result {
+    opacity: .5;
+    text-align: center;
+    padding: 35px 0;
+}
+
+body#profile section.main h1 {
+    margin: 0 0 8px;
+}
+
+body#profile section.main h3 {
+    margin: 16px 0 8px;
+    font-size: 20px;
+}
+
+body#profile section.main p {
+    margin: 0 0 8px;
+    opacity: .6;
+}
+
+body#payment-done section.main,
+body#payment section.main {
+    padding: 60px 15px 0;
+}
+
+body#payment-done section.main,
+body#payment section.main {
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body#payment section.main .spinner {
+    font-size: 82px;
+}
+
+body#payment section.main .spinner-text {
+    font-size: 14px;
+    margin: 15px 0 0;
+    opacity: .6;
+}
+
+body#payment-done section.main i {
+    font-size: 82px;
+    color: #30af30;
+}
+
+body#payment-done section.main .payment-text {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+body#payment-done section.main .payment-sub-text {
+    font-size: 16px;
+    opacity: .6;
+    margin: 0 0 10px;
+}
+
+body#payment-done section.main a {
+    color: #8ce3fd;
+}
