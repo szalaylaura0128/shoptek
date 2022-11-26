@@ -98,13 +98,13 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-flow: column;
 }
 
 header {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     left: 0;
     top: 0;
@@ -115,6 +115,7 @@ header {
     padding: 0 15px;
     display: flex;
     align-items: center;
+    pointer-events: none;
 }
 
 header img {
@@ -124,8 +125,7 @@ header img {
 section.main {
     position: relative;
     background: #fff;
-    max-height: calc(100vh - 60px);
-    flex: 1 1 auto;
+    height: 100vh;
 }
 
 .swiper {
@@ -153,8 +153,8 @@ section.main {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
-    min-height: 25%;
+    bottom: 60px;
+    min-height: 30%;
     height: auto;
     background: rgb(240, 240, 240);
     text-align: left;
@@ -196,9 +196,14 @@ section.main {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 60px;
     background: #fff;
     display: flex;
+    z-index: 99;
 }
 
 footer a {
